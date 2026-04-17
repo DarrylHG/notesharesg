@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { BookOpen, Upload, Menu, X } from 'lucide-react';
+import { Upload, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Navbar() {
@@ -12,11 +12,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shadow-lg shadow-primary/25 group-hover:shadow-primary/40 transition-shadow">
-              <BookOpen className="w-5 h-5 text-primary-foreground" />
-            </div>
+            <img
+              src="/noteshare-logo.svg"
+              alt="NoteShareSG logo"
+              className="w-9 h-9 rounded-xl object-cover shadow-lg shadow-primary/20 group-hover:shadow-primary/35 transition-shadow"
+            />
             <span className="font-heading text-xl font-bold tracking-tight">
-              NoteShare<span className="text-primary"> SG</span>
+              NoteShare<span className="text-red-500">SG</span>
             </span>
           </Link>
 
