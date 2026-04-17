@@ -13,7 +13,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2.5 group">
             <img
-              src="/noteshare-logo.svg"
+              src="/noteshare-logo.png"
               alt="NoteShareSG logo"
               className="w-9 h-9 rounded-xl object-cover shadow-lg shadow-primary/20 group-hover:shadow-primary/35 transition-shadow"
             />
