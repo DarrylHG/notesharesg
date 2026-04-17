@@ -1,0 +1,30 @@
+{
+  "name": "noteshare-backend",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "prisma:migrate": "prisma migrate dev --name init",
+    "prisma:generate": "prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "latest",
+    "bcrypt": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "express-jwt": "latest",
+    "express-session": "latest",
+    "jsonwebtoken": "latest",
+    "multer": "latest",
+    "passport": "latest",
+    "passport-google-oauth20": "latest",
+    "pdf-lib": "latest"
+  },
+  "devDependencies": {
+    "nodemon": "latest",
+    "prisma": "latest"
+  }
+}
