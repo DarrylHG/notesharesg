@@ -22,6 +22,7 @@ export default function Navbar() {
             </span>
           </Link>
 
+
           <div className="hidden md:flex items-center gap-2">
             <Link to="/">
               <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
@@ -33,6 +34,9 @@ export default function Navbar() {
                 <Upload className="w-4 h-4" />
                 Upload Notes
               </Button>
+            </Link>
+            <Link to="/auth/login">
+              <Button variant="outline" size="sm" className="ml-2">Login</Button>
             </Link>
           </div>
 
@@ -51,6 +55,9 @@ export default function Navbar() {
                 <Upload className="w-4 h-4" />
                 Upload Notes
               </Button>
+            </Link>
+            <Link to="/auth/login" onClick={() => setMobileOpen(false)}>
+              <Button variant="outline" className="w-full">Login</Button>
             </Link>
           </div>
         )}

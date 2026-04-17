@@ -9,6 +9,9 @@ import AppLayout from './components/layout/AppLayout';
 import Home from './pages/Home';
 import Upload from './pages/Upload';
 import NoteDetail from './pages/NoteDetail';
+import Login from './pages/auth/Login';
+import Signup from './pages/auth/Signup';
+import Profile from './pages/Profile';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -37,6 +40,9 @@ const AuthenticatedApp = () => {
         <Route path="/upload" element={<Upload />} />
         <Route path="/note/:id" element={<NoteDetail />} />
       </Route>
+      <Route path="/auth/login" element={<Login />} />
+      <Route path="/auth/signup" element={<Signup />} />
+      <Route path="/profile" element={<Profile />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
